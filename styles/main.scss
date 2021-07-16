@@ -1,0 +1,27 @@
+@import 'mixins';
+
+$green:#37806B;
+$brown:#CAA892;
+$light-gray100:#EBEBEB;
+$light-gray200:#EEEEEE;
+$dark-gray300:#646464;
+$title-text:#212121;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+  background: pink;
+  @include adaptive-font(40, 16);
+  font-weight: 700;
+}

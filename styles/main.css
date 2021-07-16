@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+  background: pink;
+  font-size: calc(16px + 24 * ((100vw - 320px) / 1120));
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=main.css.map */
