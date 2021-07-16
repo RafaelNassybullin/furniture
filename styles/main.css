@@ -5,16 +5,61 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 30px;
-  background: pink;
-  font-size: calc(16px + 24 * ((100vw - 320px) / 1120));
-  font-weight: 700;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-menu {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+.nav-menu .nav-logo {
+  margin-right: auto;
+  width: 151px;
+  height: 47px;
+}
+.nav-menu .menu-item {
+  text-transform: uppercase;
+  margin-right: 40px;
+}
+.nav-menu .menu-item .menu-link {
+  font-size: 16px;
+  transition: 500ms color ease-in-out;
+  font-weight: 500;
+}
+.nav-menu .menu-item .menu-link:hover {
+  color: #646464;
+}
+.nav-menu .sign-up-btn {
+  width: 97px;
+  height: 32px;
+  background: #CAA892;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 15px 0 15px 0;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */
