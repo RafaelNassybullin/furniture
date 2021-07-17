@@ -32,19 +32,53 @@ ul {
   align-items: center;
   justify-content: flex-end;
 }
-.nav-menu {
+.nav-menu2 {
   display: flex;height: 100px;
   align-items: center;
+  
+  .menu{
+    display: flex;
+    align-items: center;
+    @media(max-width:850px){
+    margin-right: 20px;
+    display: none;
+    
+  }
+  }
+  .menu-burgir{
+    width: 40px;
+    height: 40px;
+    background: #212121;
+    border-radius: 25%;
+    margin-left: 40px;
+    display: none;
+    @media(max-width:850px){
+      display: block;
+    }
+    @media(max-width:420px){
+      width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    }
+  }
 .nav-logo{
   margin-right: auto;
   width: 151px;
   height: 47px;
+  @media(max-width:420px){
+    width: 102px;
+  height: 32px;
+  }
 }
   .menu-item {
     text-transform: uppercase;
     margin-right: 40px;
+    @media(max-width:1000px){
+      margin-right: 20px;
+    }
     .menu-link {
-      font-size: 16px;
+      // font-size: 16px;
+      @include adaptive-font(16, 12);
       transition: 500ms color ease-in-out;
       font-weight: 500;
       &:hover {
@@ -53,21 +87,28 @@ ul {
     }
   }
   .sign-up-btn{
-    width: 97px;
-    height: 32px;
     background: #CAA892;
     color: white;
     outline: none;
     border: none;
     border-radius: 15px 0 15px 0;
-    font-size: 16px;
+    font-weight: 600;
+    // font-size: 16px;
+    @include adaptive-font(16, 13);
+    padding: 8px 16px;
+    @media(max-width:420px){
+      padding: 5px 10px;
+    }
   }
 }
 
 .main-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  margin-top: 50px;
+  @media(max-width:688px){
+    grid-template-columns: 1fr;
+  }
 
   .main-title{
     display: flex;
@@ -77,6 +118,8 @@ ul {
     h4{
       font-size: 20px;
       text-transform: uppercase;
+      margin-bottom: 20px;
+      @include adaptive-font(20, 13);
     }
     h1{
       @include adaptive-font(72, 29);
@@ -90,6 +133,11 @@ ul {
       font-size: 18px;
       color: #646464;
       line-height: 30px;
+      margin: 20px 0;
+      @media(max-width:420px){
+        font-size: 16px;
+        line-height: 23px;
+      }
     }
   }
   .main-image{
@@ -98,6 +146,9 @@ ul {
     //overflow: hidden;
     border-radius: 25% 0 25% 0;
     position: relative;
+    @media(max-width:688px){
+      margin-top: 50px;
+    }
     &:after{
       content: '';
       width: inherit;

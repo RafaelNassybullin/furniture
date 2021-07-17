@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -24,76 +25,189 @@ ul {
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.nav-menu {
+.nav-menu2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.nav-menu .nav-logo {
+
+.nav-menu2 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 850px) {
+  .nav-menu2 .menu {
+    margin-right: 20px;
+    display: none;
+  }
+}
+
+.nav-menu2 .menu-burgir {
+  width: 40px;
+  height: 40px;
+  background: #212121;
+  border-radius: 25%;
+  margin-left: 40px;
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .nav-menu2 .menu-burgir {
+    display: block;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-menu2 .menu-burgir {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+  }
+}
+
+.nav-menu2 .nav-logo {
   margin-right: auto;
   width: 151px;
   height: 47px;
 }
-.nav-menu .menu-item {
+
+@media (max-width: 420px) {
+  .nav-menu2 .nav-logo {
+    width: 102px;
+    height: 32px;
+  }
+}
+
+.nav-menu2 .menu-item {
   text-transform: uppercase;
   margin-right: 40px;
 }
-.nav-menu .menu-item .menu-link {
-  font-size: 16px;
+
+@media (max-width: 1000px) {
+  .nav-menu2 .menu-item {
+    margin-right: 20px;
+  }
+}
+
+.nav-menu2 .menu-item .menu-link {
+  font-size: calc(12px + 4 * ((100vw - 320px) / 1120));
+  -webkit-transition: 500ms color ease-in-out;
   transition: 500ms color ease-in-out;
   font-weight: 500;
 }
-.nav-menu .menu-item .menu-link:hover {
+
+.nav-menu2 .menu-item .menu-link:hover {
   color: #646464;
 }
-.nav-menu .sign-up-btn {
-  width: 97px;
-  height: 32px;
+
+.nav-menu2 .sign-up-btn {
   background: #CAA892;
   color: white;
   outline: none;
   border: none;
   border-radius: 15px 0 15px 0;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: calc(13px + 3 * ((100vw - 320px) / 1120));
+  padding: 8px 16px;
+}
+
+@media (max-width: 420px) {
+  .nav-menu2 .sign-up-btn {
+    padding: 5px 10px;
+  }
 }
 
 .main-wrapper {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
 }
+
+@media (max-width: 688px) {
+  .main-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .main-wrapper .main-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .main-wrapper .main-title h4 {
   font-size: 20px;
   text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: calc(13px + 7 * ((100vw - 320px) / 1120));
 }
+
 .main-wrapper .main-title h1 {
   font-size: calc(29px + 43 * ((100vw - 320px) / 1120));
   font-weight: 700;
   text-transform: capitalize;
   max-width: 552px;
 }
+
 .main-wrapper .main-title p {
   max-width: 602px;
   font-size: 18px;
   color: #646464;
   line-height: 30px;
+  margin: 20px 0;
 }
+
+@media (max-width: 420px) {
+  .main-wrapper .main-title p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
 .main-wrapper .main-image {
   width: 100%;
   border-radius: 25% 0 25% 0;
   position: relative;
 }
+
+@media (max-width: 688px) {
+  .main-wrapper .main-image {
+    margin-top: 50px;
+  }
+}
+
 .main-wrapper .main-image:after {
-  content: "";
+  content: '';
   width: inherit;
   padding-bottom: 88%;
   border: #CAA892 solid 3px;
@@ -103,11 +217,12 @@ ul {
   left: 20px;
   z-index: -1;
 }
+
 .main-wrapper .main-image img {
   width: 100%;
   height: 100%;
   border-radius: 25% 0 25% 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
 /*# sourceMappingURL=main.css.map */
