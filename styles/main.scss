@@ -44,16 +44,19 @@ ul {
     position: absolute;
     color: white;
     top: 0;
-    left: 0;
+    left: -230px;
     flex-direction: column;
     height: 100vh;
     justify-content: space-around;
     background: $green;
     width: 70%;
     z-index: 90;
+    transition: 1s;
     box-shadow: 0 0  10px rgb(216, 216, 216);
     font-size: 30px;
+    
   }
+  
   }
   .menu-burgir{
     width: 40px;
@@ -200,4 +203,7 @@ ul {
       
     }
   }
+}
+.menu.open{
+  left: 0;
 }

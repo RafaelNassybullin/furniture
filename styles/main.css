@@ -61,7 +61,7 @@ ul {
     position: absolute;
     color: white;
     top: 0;
-    left: 0;
+    left: -230px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -72,6 +72,8 @@ ul {
     background: #37806B;
     width: 70%;
     z-index: 90;
+    -webkit-transition: 1s;
+    transition: 1s;
     -webkit-box-shadow: 0 0 10px #d8d8d8;
             box-shadow: 0 0 10px #d8d8d8;
     font-size: 30px;
@@ -273,5 +275,9 @@ ul {
   border-radius: 25% 0 25% 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.menu.open {
+  left: 0;
 }
 /*# sourceMappingURL=main.css.map */
