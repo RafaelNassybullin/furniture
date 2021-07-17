@@ -58,7 +58,23 @@ ul {
 @media (max-width: 850px) {
   .nav-menu2 .menu {
     margin-right: 20px;
-    display: none;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: #37806B;
+    width: 70%;
+    z-index: 90;
+    -webkit-box-shadow: 0 0 10px #d8d8d8;
+            box-shadow: 0 0 10px #d8d8d8;
+    font-size: 30px;
   }
 }
 
@@ -68,6 +84,7 @@ ul {
   background: #212121;
   border-radius: 25%;
   margin-left: 40px;
+  cursor: pointer;
   display: none;
 }
 
@@ -116,6 +133,14 @@ ul {
   font-weight: 500;
 }
 
+@media (max-width: 850px) {
+  .nav-menu2 .menu-item .menu-link {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
 .nav-menu2 .menu-item .menu-link:hover {
   color: #646464;
 }
@@ -127,8 +152,15 @@ ul {
   border: none;
   border-radius: 15px 0 15px 0;
   font-weight: 600;
+  -webkit-transition: 300ms all ease-in-out;
+  transition: 300ms all ease-in-out;
+  cursor: pointer;
   font-size: calc(13px + 3 * ((100vw - 320px) / 1120));
   padding: 8px 16px;
+}
+
+.nav-menu2 .sign-up-btn:hover {
+  background: #37806B;
 }
 
 @media (max-width: 420px) {
@@ -192,6 +224,23 @@ ul {
     font-size: 16px;
     line-height: 23px;
   }
+}
+
+.main-wrapper .main-title a {
+  background: #37806B;
+  color: white;
+  text-transform: capitalize;
+  width: 90px;
+  border-radius: 15px 0 15px 0;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 16px;
+  -webkit-transition: 300ms all ease-in-out;
+  transition: 300ms all ease-in-out;
+}
+
+.main-wrapper .main-title a:hover {
+  background: #CAA892;
 }
 
 .main-wrapper .main-image {
