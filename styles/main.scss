@@ -44,7 +44,7 @@ ul {
     position: absolute;
     color: white;
     top: 0;
-    left: -230px;
+    left: -70%;
     flex-direction: column;
     height: 100vh;
     justify-content: space-around;
@@ -156,6 +156,14 @@ ul {
       color: #646464;
       line-height: 30px;
       margin: 20px 0;
+      @media(max-width:836px){
+        max-width: 366px;
+    font-size: 14px;
+    line-height: 21px;
+      }
+      @media(max-width:688px){
+        max-width: 100%;
+      }
       @media(max-width:420px){
         font-size: 16px;
         line-height: 23px;
@@ -179,8 +187,10 @@ ul {
   }
   .main-image{
     width: 100%;
+    max-height: 609px;
     border-radius: 25% 0 25% 0;
     position: relative;
+    align-self: center;
     @media(max-width:688px){
       margin-top: 50px;
     }
@@ -207,4 +217,46 @@ ul {
 }
 .menu.open{
   left: 0;
+}
+
+
+.main-title.revert-mod-one{
+  order: 2;margin-left: 50px;
+  @media(max-width:1040px){
+    margin-left: 20px;
+  }
+  h4{
+    margin-top: 84px;
+  }
+  h1{
+    @include adaptive-font(48, 29);
+    font-weight: 700;
+    text-transform: capitalize;}
+}
+
+
+.main-image.revert-mod-two{
+  &:after{
+    
+    top: -20px;
+    left: -20px;}
+}
+
+.main-title.mod-title{
+  h4{
+font-size: 212px;
+  font-weight: 700;
+  background:url(../img/sofa.jpg) no-repeat center/cover;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  }
+  h1{
+    font-size: 50px;
+    margin: -40px 0 40px 0;
+  }
+}
+
+
+.section-two{
+  margin-top: 190px;
 }
