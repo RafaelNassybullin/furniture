@@ -41,7 +41,7 @@ ul {
 @media (max-width: 850px) {
   .nav-menu2 .menu {
     margin-right: 20px;
-    position: absolute;
+    position: fixed;
     color: white;
     top: 0;
     left: -70%;
@@ -243,9 +243,6 @@ ul {
     margin-left: 20px;
   }
 }
-.main-title.revert-mod-one h4 {
-  margin-top: 84px;
-}
 .main-title.revert-mod-one h1 {
   font-size: calc(29px + 19 * ((100vw - 320px) / 1120));
   font-weight: 700;
@@ -276,6 +273,86 @@ ul {
   .section-two {
     margin-top: 56px;
   }
+}
+
+.our-service {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.our-service-wrapper {
+  position: relative;
+}
+.our-service-wrapper h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.our-service-wrapper h1 {
+  font-size: 48px;
+  text-transform: capitalize;
+}
+.our-service-wrapper .our-service-slider {
+  display: flex;
+}
+.our-service-wrapper .our-service-slider .slide {
+  display: flex;
+  background: #ffffff;
+  border-radius: 50px 0 50px 0;
+  padding: 30px 21px 35px 37px;
+  margin: 18.5px;
+  box-shadow: 0 0 10px #c4c4c4;
+  transition: 300ms all ease-in-out;
+}
+.our-service-wrapper .our-service-slider .slide svg {
+  margin-top: 10.5px;
+  margin-right: 18px;
+}
+.our-service-wrapper .our-service-slider .slide .text_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.our-service-wrapper .our-service-slider .slide .text_wrap .title {
+  font-size: calc(13px + 11 * ((100vw - 320px) / 1120));
+  margin-bottom: 10px;
+}
+.our-service-wrapper .our-service-slider .slide .text_wrap .text {
+  font-size: calc(10px + 8 * ((100vw - 320px) / 1120));
+  color: #646464;
+  line-height: 28px;
+  transition: 300ms all ease-in-out;
+}
+.our-service-wrapper .our-service-slider .slide:hover {
+  background: #CAA892;
+  color: white !important;
+  fill: white;
+}
+.our-service-wrapper .our-service-slider .slide:hover .text {
+  color: white;
+}
+
+.arrows {
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  color: white;
+}
+.arrows .prev,
+.arrows .next {
+  width: 30px;
+  height: 30px;
+  background: #37806B;
+  border-radius: 50%;
+  margin: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrows .prev:hover,
+.arrows .next:hover {
+  background: #a0a0a0;
+  color: #37806B;
 }
 
 /*# sourceMappingURL=main.css.map */
