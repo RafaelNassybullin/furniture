@@ -271,6 +271,12 @@ ul {
   margin: -40px 0 40px 0;
 }
 
+@media (max-width: 607px) {
+  .section-one {
+    margin-top: -107px;
+  }
+}
+
 .section-two {
   margin-top: 56px;
 }
@@ -290,7 +296,6 @@ ul {
 
 .swiper-slide {
   font-size: 18px;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -335,6 +340,13 @@ ul {
   margin-top: 10.5px;
   margin-right: 18px;
 }
+@media (max-width: 320px) {
+  .slide svg {
+    margin-top: 2.5px;
+    margin-right: 5px;
+    width: 30px;
+  }
+}
 .slide .text_wrap {
   display: flex;
   flex-direction: column;
@@ -342,6 +354,11 @@ ul {
 .slide .text_wrap .title {
   font-size: calc(13px + 11 * ((100vw - 320px) / 1120));
   margin-bottom: 10px;
+}
+@media (max-width: 320px) {
+  .slide .text_wrap .title {
+    margin-bottom: 5px;
+  }
 }
 .slide .text_wrap .text {
   font-size: calc(8px + 10 * ((100vw - 320px) / 1120));
@@ -371,16 +388,39 @@ ul {
 .swiper-arrows {
   width: 80px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   position: absolute;
   top: -54px;
   right: 90px;
 }
+@media (max-width: 689px) {
+  .swiper-arrows {
+    top: -38px;
+    right: 15px;
+  }
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  content: "";
+  font-family: "icomoon";
+  font-size: 10px;
+  text-transform: none !important;
+}
 
 .swiper-button-next, .swiper-button-prev {
   position: unset;
-  display: block;
+  display: flex;
   margin: 0;
+  color: #ffffff;
+  background: #37806B;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 0 10px #a0a0a0;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background: white;
+  color: #444444;
 }
 
 /*# sourceMappingURL=main.css.map */
