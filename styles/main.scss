@@ -30,6 +30,9 @@ ul {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 30px;
+  @media(max-width: 375px){
+    padding: 0 15px;
+  }
 }
 
 .wrapper {
@@ -228,6 +231,10 @@ ul {
     position: absolute;
     top: 20px;
     left: 20px;
+    @media(max-width: 375px){
+      top: 7px;
+    left: 7px;
+    }
     z-index: -1;
   }
 
@@ -263,6 +270,10 @@ ul {
 
     top: -20px;
     left: -20px;
+    @media(max-width: 375px){
+      top: -10px;
+    left: -10px;
+    }
   }
 }
 
@@ -424,5 +435,108 @@ ul {
     background: white;
     color: #444444;
 
+  }
+}
+
+.sign-up {
+  width: 100%;
+  text-align: center;
+}
+
+.sign-up-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 650px;
+
+  h1 {
+    font-size: 48px;
+    @media(max-width: 425px) {
+      font-size: 32px;
+    }
+  }
+
+  .border {
+    width: 34.32%;
+    height: 2px;
+    background: #c1c1c1;
+    margin: 33px 0 48px 0;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: center;
+    color: #646464;
+    margin-bottom: 37px;
+    max-width: 619px;
+    @media(max-width: 340px) {
+      font-size: 15px;
+    }
+  }
+
+  label {
+    padding: 16px;
+    background: #EEEEEE;
+    border-radius: 20px 0 20px 0;
+    position: relative;
+    overflow: hidden;
+    @media(max-width: 482px) {
+      overflow: unset;
+      padding: 12px;
+    }
+
+    .sign-input-btn {
+      font-size: 18px;
+      outline: none;
+      border: none;
+      background: #37806B;
+      color: white;
+      height: 100%;
+      padding: 0 40px;
+      position: absolute;
+      text-transform: uppercase;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      transition: 300ms background-color ease-in-out;
+      @media(max-width: 482px) {
+        top: 62px;
+        right: 50%;
+        transform: translateX(50%);
+        border-radius: 20px 0 20px 0;
+      }
+
+      &:hover {
+        background: #CAA892;
+      }
+    }
+  }
+
+  .sign-input-wrap input {
+    width: 700px;
+    @media(max-width: 795px) {
+      width: 600px;
+    }
+    @media(max-width: 682px) {
+      width: 500px;
+    }
+    @media(max-width: 581px) {
+      width: 400px;
+    }
+    @media(max-width: 466px) {
+      width: 300px;
+    }
+    @media(max-width: 340px) {
+      width: 246px;
+    }
+    outline: none;
+    border: none;
+    background: #EEEEEE;
+    font-size: 18px;
+  }
+
+  .sign-input-wrap input::placeholder {
+    font-size: 18px;
   }
 }
