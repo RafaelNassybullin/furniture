@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?eer8qz');
-  src:  url('../fonts/icomoon.eot?eer8qz#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?eer8qz') format('truetype'),
-    url('../fonts/icomoon.woff?eer8qz') format('woff'),
-    url('../fonts/icomoon.svg?eer8qz#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?nyvc2l');
+  src:  url('../fonts/icomoon.eot?nyvc2l#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?nyvc2l') format('truetype'),
+    url('../fonts/icomoon.woff?nyvc2l') format('woff'),
+    url('../fonts/icomoon.svg?nyvc2l#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,12 +25,66 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-next:before {
+.icon-main-logo .path1:before {
+  content: "\e900";
+  color: rgb(66, 96, 84);
+}
+.icon-main-logo .path2:before {
   content: "\e901";
+  margin-left: -3.2275390625em;
+  color: rgb(66, 96, 84);
+}
+.icon-main-logo .path3:before {
+  content: "\e902";
+  margin-left: -3.2275390625em;
+  color: rgb(66, 96, 84);
+}
+.icon-main-logo .path4:before {
+  content: "\e903";
+  margin-left: -3.2275390625em;
+  color: rgb(66, 96, 84);
+}
+.icon-main-logo .path5:before {
+  content: "\e904";
+  margin-left: -3.2275390625em;
+  color: rgb(66, 96, 84);
+}
+.icon-main-logo .path6:before {
+  content: "\e905";
+  margin-left: -3.2275390625em;
+  color: rgb(66, 96, 84);
+}
+.icon-main-logo .path7:before {
+  content: "\e906";
+  margin-left: -3.2275390625em;
+  color: rgb(66, 96, 84);
+}
+.icon-main-logo .path8:before {
+  content: "\e907";
+  margin-left: -3.2275390625em;
+  color: rgb(176, 132, 90);
+}
+.icon-quote:before {
+  content: "\e908";
+}
+.icon-facebook:before {
+  content: "\e909";
+}
+.icon-instagram-1:before {
+  content: "\e90a";
+}
+.icon-linkedin:before {
+  content: "\e90b";
+}
+.icon-twitter:before {
+  content: "\e90c";
+}
+.icon-furni:before {
+  content: "\e90d";
+}
+.icon-next:before {
+  content: "\e90e";
 }
 .icon-prev:before {
-  content: "\e902";
-}
-.icon-kovich:before {
-  content: "\e900";
+  content: "\e90f";
 }

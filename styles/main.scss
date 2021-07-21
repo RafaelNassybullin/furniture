@@ -88,11 +88,11 @@ ul {
 
   .nav-logo {
     margin-right: auto;
+    font-size: 47px;
     width: 151px;
-    height: 47px;
     @media(max-width: 420px) {
-      width: 102px;
-      height: 32px;
+
+      font-size: 32px;
     }
   }
 
@@ -350,12 +350,14 @@ ul {
     padding: 15px 10px 10px 20px;
   }
 
-  svg {
+  .icon {
     margin-top: 10.5px;
     margin-right: 18px;
+    font-size: 40px;
     @media(max-width: 320px) {
       margin-top: 2.5px;
       margin-right: 5px;
+      font-size: 30px;
       width: 30px;
     }
   }
