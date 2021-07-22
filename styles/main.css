@@ -554,4 +554,119 @@ ul {
   font-size: 18px;
 }
 
+.our-blog {
+  width: 100%;
+  background: #F8F8F8;
+  padding-top: 93px;
+}
+.our-blog h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+.our-blog h1 {
+  text-align: center;
+  font-size: 48px;
+}
+@media (max-width: 880px) {
+  .our-blog h1 {
+    margin-bottom: 50px;
+  }
+}
+
+.blog-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 880px) {
+  .blog-wrapper {
+    flex-direction: column;
+  }
+}
+
+.blog-card {
+  margin: 50px;
+}
+@media (max-width: 880px) {
+  .blog-card {
+    position: relative;
+  }
+}
+@media (max-width: 801px) {
+  .blog-card {
+    margin: 10px;
+  }
+}
+.blog-card .blog-image {
+  max-width: 500px;
+  position: relative;
+  padding-bottom: 70%;
+}
+@media (max-width: 880px) {
+  .blog-card .blog-image {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.blog-card .blog-image:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: #CAA892 solid 2px;
+  border-radius: 25% 0 25% 0;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.blog-card .blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 20% 0 20% 0;
+  z-index: 3;
+}
+.blog-card h2 {
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+}
+.blog-card p {
+  padding-left: 20px;
+  max-width: 550px;
+}
+@media (max-width: 880px) {
+  .blog-card p {
+    margin: 0 auto;
+    padding-bottom: 142px;
+  }
+}
+.blog-card .blog-btn {
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background: #37806B;
+  color: white;
+  transition: 300ms background-color ease-in-out;
+  margin: 40px 0;
+  padding: 13px 33px;
+  border-radius: 25px 0 25px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.blog-card .blog-btn:hover {
+  background: #CAA892;
+}
+@media (max-width: 880px) {
+  .blog-card .blog-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
