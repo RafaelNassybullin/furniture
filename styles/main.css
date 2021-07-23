@@ -840,7 +840,7 @@ ul {
     padding: 21px 28px 30px 49px;
   }
 }
-@media (max-width: 498px) {
+@media (max-width: 598px) {
   .testimonials .one-slide {
     margin: 10px;
     margin-left: 25px;
@@ -862,7 +862,7 @@ ul {
     height: 80px;
   }
 }
-@media (max-width: 498px) {
+@media (max-width: 598px) {
   .testimonials .one-slide .image {
     width: 60px;
     height: 60px;
@@ -879,7 +879,7 @@ ul {
   font-weight: 600;
   margin-bottom: 8px;
 }
-@media (max-width: 498px) {
+@media (max-width: 598px) {
   .testimonials .one-slide h3 {
     font-size: 11px;
   }
@@ -889,7 +889,7 @@ ul {
   color: #646464;
   margin-left: 5px;
 }
-@media (max-width: 498px) {
+@media (max-width: 598px) {
   .testimonials .one-slide h3 span {
     font-size: 12px;
   }
@@ -901,7 +901,7 @@ ul {
   top: 20px;
   right: 20px;
 }
-@media (max-width: 498px) {
+@media (max-width: 598px) {
   .testimonials .quote {
     font-size: 14px;
   }
@@ -917,10 +917,95 @@ ul {
   font-size: calc(10pxpx + 8px * ((100vw - 320px) / 1120));
   color: #646464;
 }
-@media (max-width: 498px) {
+@media (max-width: 598px) {
   .testimonials p {
     font-size: 11px;
   }
+}
+
+.footer {
+  padding: 106px 0 0 0;
+  background: #F8F8F8;
+}
+.footer .copyright {
+  border-top: 2px solid #C4C4C4;
+}
+.footer .copyright p {
+  padding: 15px 0;
+  font-size: 18px;
+  text-align: center;
+}
+.footer .copyright p span a {
+  color: #37806B;
+}
+
+.footer-wrap {
+  display: flex;
+  font-size: 18px;
+  margin-bottom: 62px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-wrap .logo-footer {
+  flex: 387px;
+  padding: 15px 0;
+}
+.footer-wrap .logo-footer .logo {
+  font-size: 47px;
+}
+.footer-wrap .logo-footer p {
+  max-width: 350px;
+  color: #646464;
+}
+.footer-wrap a {
+  color: #646464;
+}
+.footer-wrap h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #212121;
+}
+.footer-wrap li {
+  margin: 13px 0;
+}
+.footer-wrap .quick-links {
+  flex: 283px;
+  padding: 15px 0;
+}
+.footer-wrap .company {
+  flex: 245px;
+  padding: 15px 0;
+}
+.footer-wrap .contact-us {
+  flex: 253px;
+  padding: 15px 0;
+}
+.footer-wrap .follow-us {
+  flex: 172px;
+  padding: 15px 0;
+}
+.footer-wrap .follow-us .social-icon {
+  font-size: 20px;
+  color: #ffffff;
+  display: flex;
+  width: 172px;
+  justify-content: space-between;
+}
+.footer-wrap .follow-us .social-icon i {
+  width: 37px;
+  height: 37px;
+  background: #37806B;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 300ms all ease-in-out;
+}
+.footer-wrap .follow-us .social-icon i:hover {
+  color: #37806B;
+  background: #CAA892;
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=main.css.map */

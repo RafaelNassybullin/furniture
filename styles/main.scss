@@ -857,7 +857,7 @@ ul {
 
     margin: 50px;
     margin-left: 70px;
-    @media(max-width: 498px) {
+    @media(max-width: 598px) {
       margin: 10px;
       margin-left: 25px;
     }
@@ -877,7 +877,7 @@ ul {
         width: 80px;
         height: 80px;
       }
-      @media(max-width: 498px) {
+      @media(max-width: 598px) {
         width: 60px;
         height: 60px;
         left: -23px;
@@ -895,7 +895,7 @@ ul {
       @include adaptive-font(24px, 13px);
       font-weight: 600;
       margin-bottom: 8px;
-      @media(max-width: 498px) {
+      @media(max-width: 598px) {
         font-size: 11px;
       }
 
@@ -903,7 +903,7 @@ ul {
         font-size: 16px;
         color: #646464;
         margin-left: 5px;
-        @media(max-width: 498px) {
+        @media(max-width: 598px) {
           font-size: 12px;
         }
       }
@@ -916,7 +916,7 @@ ul {
     position: absolute;
     top: 20px;
     right: 20px;
-    @media(max-width: 498px) {
+    @media(max-width: 598px) {
       font-size: 14px;
     }
     @media(max-width: 320px) {
@@ -930,14 +930,111 @@ ul {
     //font-size: 18px;
     @include adaptive-font(18px, 10px);
     color: #646464;
-    @media(max-width: 498px) {
+    @media(max-width: 598px) {
       font-size: 11px;
     }
 
   }
 }
 
+.footer{
+  padding: 106px 0 0 0 ;
+  background: #F8F8F8;
 
+  .copyright{
+    border-top: 2px solid #C4C4C4;
+
+
+    p{
+      padding: 15px 0;
+font-size: 18px;
+      text-align: center;
+      span{
+        a{
+          color: #37806B;
+        }
+
+      }
+    }
+  }
+}
+
+.footer-wrap{
+  display: flex;
+  font-size: 18px;
+  margin-bottom: 62px;
+  flex-wrap: wrap;
+  justify-content: center;
+  //align-items: center;
+
+  .logo-footer{
+    flex: 387px;
+    //background: #007aff;
+    padding: 15px 0;
+    .logo{
+      font-size: 47px;
+    }
+    p{
+      max-width: 350px;
+      color: #646464;
+    }
+  }
+  a{
+    color: #646464;
+  }
+  h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+color:#212121;
+  }
+  li{
+    margin: 13px 0;
+  }
+  .quick-links{
+    flex: 283px;
+    //background: #CAA892;
+    padding: 15px 0;
+  }
+  .company{
+    flex: 245px;
+    //background: #37806B;
+    padding: 15px 0;
+  }
+  .contact-us{
+    flex: 253px;
+    //background: pink;
+    padding: 15px 0;
+  }
+  .follow-us{
+    flex: 172px;
+    //background: aqua;
+    padding: 15px 0;
+    .social-icon{
+      font-size: 20px;
+      color: #ffffff;
+      display:flex;
+      width: 172px;
+      justify-content:space-between;
+      i{
+        width: 37px;
+        height: 37px;
+        background: #37806B;
+        border-radius: 50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        cursor: pointer;
+        transition: 300ms all ease-in-out;
+        &:hover{
+          color: #37806B;
+          background: #CAA892;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+}
 
 
 
