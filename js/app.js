@@ -44,7 +44,7 @@ let swiper2 = new Swiper('.mySwiper2', {
     slidesPerView: 2,
     spaceBetween: 10,
     loop: true,
-    autoplay: true,
+    // autoplay: true,
     breakpoints: {
         0: {
             slidesPerView: 1,

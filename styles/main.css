@@ -155,7 +155,7 @@ ul {
 
 .hambergerIcon {
   height: 5px;
-  width: 40px;
+  width: 35px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -554,7 +554,7 @@ ul {
   }
 }
 .sign-up-wrap label .sign-input-btn {
-  font-size: 18px;
+  font-size: 14px;
   outline: none;
   border: none;
   background: #37806B;
@@ -566,6 +566,7 @@ ul {
   top: 0;
   right: 0;
   cursor: pointer;
+  font-weight: 600;
   transition: 300ms background-color ease-in-out;
 }
 @media (max-width: 482px) {
@@ -706,12 +707,13 @@ ul {
   }
 }
 .blog-card .blog-btn {
-  font-size: 18px;
+  font-size: 15px;
   outline: none;
   border: none;
   background: #37806B;
   color: white;
   transition: 300ms background-color ease-in-out;
+  font-weight: 600;
   margin: 40px 0;
   padding: 13px 33px;
   border-radius: 25px 0 25px 0;
@@ -805,7 +807,7 @@ ul {
 
 .testimonials {
   margin-top: 45px;
-  padding-bottom: 183px;
+  padding-bottom: 123px;
 }
 .testimonials h2 {
   text-transform: uppercase;
@@ -818,6 +820,7 @@ ul {
 .testimonials h1 {
   font-size: 48px;
   text-align: center;
+  margin-bottom: 60px;
 }
 .testimonials .slide-wrap {
   display: flex;
@@ -828,17 +831,43 @@ ul {
   border-radius: 70px 0 70px 0;
   position: relative;
   margin: 50px;
+  margin-left: 70px;
   cursor: grab;
+  max-width: 555px;
+}
+@media (max-width: 670px) {
+  .testimonials .one-slide {
+    padding: 21px 28px 30px 49px;
+  }
+}
+@media (max-width: 498px) {
+  .testimonials .one-slide {
+    margin: 10px;
+    margin-left: 25px;
+  }
 }
 .testimonials .one-slide .image {
   width: 130px;
   height: 130px;
-  border-radius: 20% 0 20% 0;
+  border-radius: 25% 0 25% 0;
   overflow: hidden;
   position: absolute;
   left: -48px;
   top: 50%;
   transform: translateY(-50%);
+}
+@media (max-width: 670px) {
+  .testimonials .one-slide .image {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 498px) {
+  .testimonials .one-slide .image {
+    width: 60px;
+    height: 60px;
+    left: -23px;
+  }
 }
 .testimonials .one-slide .image img {
   width: 100%;
@@ -850,10 +879,20 @@ ul {
   font-weight: 600;
   margin-bottom: 8px;
 }
+@media (max-width: 498px) {
+  .testimonials .one-slide h3 {
+    font-size: 11px;
+  }
+}
 .testimonials .one-slide h3 span {
   font-size: 16px;
   color: #646464;
   margin-left: 5px;
+}
+@media (max-width: 498px) {
+  .testimonials .one-slide h3 span {
+    font-size: 12px;
+  }
 }
 .testimonials .quote {
   font-size: 25px;
@@ -862,10 +901,26 @@ ul {
   top: 20px;
   right: 20px;
 }
+@media (max-width: 498px) {
+  .testimonials .quote {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .testimonials .quote {
+    top: 10px;
+    right: 10px;
+  }
+}
 .testimonials p {
   max-width: 434px;
   font-size: calc(10pxpx + 8px * ((100vw - 320px) / 1120));
   color: #646464;
+}
+@media (max-width: 498px) {
+  .testimonials p {
+    font-size: 11px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
