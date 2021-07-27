@@ -6,7 +6,7 @@ document.body.onload = function () {
         if (!preloader.classList.contains('done')) {
             preloader.classList.add('done');
         }
-    }, 1000);
+    }, 500);
 }
 burger.addEventListener('click', () => {
     menu.classList.toggle('open');

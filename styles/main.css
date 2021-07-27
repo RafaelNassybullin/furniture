@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,7 +39,7 @@ ul {
   z-index: 99;
   display: grid;
   place-items: center;
-  transition: 2s all ease-in-out;
+  transition: 1s all ease-in-out;
 }
 .preloader .loader {
   width: 75px;
@@ -958,6 +959,7 @@ ul {
 .footer {
   padding: 106px 0 0 0;
   background: #F8F8F8;
+  position: relative;
 }
 .footer .copyright {
   border-top: 2px solid #C4C4C4;
@@ -1038,6 +1040,27 @@ ul {
   color: #37806B;
   background: #CAA892;
   transform: scale(1.2);
+}
+
+.scroll-up {
+  width: 40px;
+  height: 40px;
+  background: #37806B;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  top: -20px;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 1rem;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  transition: 300ms all ease-in-out;
+}
+.scroll-up:hover {
+  background: #CAA892;
+  color: #37806B;
 }
 
 /*# sourceMappingURL=main.css.map */
