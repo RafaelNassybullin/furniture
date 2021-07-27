@@ -35,6 +35,43 @@ ul {
   }
 }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 99;
+  display: grid;
+  place-items: center;
+  transition: 2s all ease-in-out;
+
+  .loader {
+    width: 75px;
+    height: 75px;
+    border: 10px solid #37806B;
+    border-radius: 50%;
+    border-top-color: #CAA892;
+    animation: 2s spin infinite linear;
+  }
+
+  &.done {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -61,7 +98,7 @@ ul {
       background: $green;
       width: 70%;
       z-index: 90;
-      transition: 1s;
+      transition: 1s all ease-in-out;
       box-shadow: 0 0 10px rgb(216, 216, 216);
       font-size: 30px;
 
@@ -937,20 +974,21 @@ ul {
   }
 }
 
-.footer{
-  padding: 106px 0 0 0 ;
+.footer {
+  padding: 106px 0 0 0;
   background: #F8F8F8;
 
-  .copyright{
+  .copyright {
     border-top: 2px solid #C4C4C4;
 
 
-    p{
+    p {
       padding: 15px 0;
-font-size: 18px;
+      font-size: 18px;
       text-align: center;
-      span{
-        a{
+
+      span {
+        a {
           color: #37806B;
         }
 
@@ -959,7 +997,7 @@ font-size: 18px;
   }
 }
 
-.footer-wrap{
+.footer-wrap {
   display: flex;
   font-size: 18px;
   margin-bottom: 62px;
@@ -967,65 +1005,77 @@ font-size: 18px;
   justify-content: center;
   //align-items: center;
 
-  .logo-footer{
+  .logo-footer {
     flex: 387px;
     //background: #007aff;
     padding: 15px 0;
-    .logo{
+
+    .logo {
       font-size: 47px;
     }
-    p{
+
+    p {
       max-width: 350px;
       color: #646464;
     }
   }
-  a{
+
+  a {
     color: #646464;
   }
-  h3{
+
+  h3 {
     font-size: 24px;
     margin-bottom: 15px;
-color:#212121;
+    color: #212121;
   }
-  li{
+
+  li {
     margin: 13px 0;
   }
-  .quick-links{
+
+  .quick-links {
     flex: 283px;
     //background: #CAA892;
     padding: 15px 0;
   }
-  .company{
+
+  .company {
     flex: 245px;
     //background: #37806B;
     padding: 15px 0;
   }
-  .contact-us{
+
+  .contact-us {
     flex: 253px;
     //background: pink;
     padding: 15px 0;
   }
-  .follow-us{
+
+  .follow-us {
     flex: 172px;
     //background: aqua;
     padding: 15px 0;
-    .social-icon{
+
+    .social-icon {
       font-size: 20px;
       color: #ffffff;
-      display:flex;
+      display: flex;
       width: 172px;
-      justify-content:space-between;
-      i{
+      justify-content: space-between;
+
+      i {
         width: 37px;
         height: 37px;
         background: #37806B;
         border-radius: 50%;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
         transition: 300ms all ease-in-out;
-        &:hover{
+
+        &:hover {
           color: #37806B;
           background: #CAA892;
           transform: scale(1.2);

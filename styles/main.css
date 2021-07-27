@@ -28,6 +28,39 @@ ul {
   }
 }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 99;
+  display: grid;
+  place-items: center;
+  transition: 2s all ease-in-out;
+}
+.preloader .loader {
+  width: 75px;
+  height: 75px;
+  border: 10px solid #37806B;
+  border-radius: 50%;
+  border-top-color: #CAA892;
+  animation: 2s spin infinite linear;
+}
+.preloader.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .wrapper {
   display: flex;
   align-items: center;
@@ -56,7 +89,7 @@ ul {
     background: #37806B;
     width: 70%;
     z-index: 90;
-    transition: 1s;
+    transition: 1s all ease-in-out;
     box-shadow: 0 0 10px #d8d8d8;
     font-size: 30px;
   }

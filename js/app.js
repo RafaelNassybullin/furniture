@@ -1,6 +1,13 @@
 let burger = document.querySelector('.menu-burgir');
 let menu = document.querySelector('.menu');
-
+document.body.onload = function () {
+    setTimeout(function () {
+        let preloader = document.querySelector('.preloader');
+        if (!preloader.classList.contains('done')) {
+            preloader.classList.add('done');
+        }
+    }, 1000);
+}
 burger.addEventListener('click', () => {
     menu.classList.toggle('open');
 })
@@ -44,16 +51,16 @@ let swiper2 = new Swiper('.mySwiper2', {
     slidesPerView: 2,
     spaceBetween: 10,
     loop: true,
-    // autoplay: true,
     breakpoints: {
         0: {
             slidesPerView: 1,
             spaceBetween: 15
         },
-
-        1270: {
+        1100: {
             slidesPerView: 2,
 
         }
     }
 });
+
+
